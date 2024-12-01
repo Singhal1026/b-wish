@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   padding: 0;
   background-image: url('../img2.png');
@@ -83,4 +83,190 @@ a {
   font-size: 25px;
   font-family: monospace;
 
+} */
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: white;
+  overflow: auto;
 }
+
+a {
+  color: white;
+  font-size: 14px;
+}
+
+#main {
+  width: 100%;
+}
+
+/* Container settings */
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+  margin-top: 10px;
+}
+
+/* Position and size of text box */
+#text {
+  width: 272px;
+  height: 560px;
+  left: 188px;
+  top: 80px;
+  position: absolute;
+}
+
+/* Code section */
+#code {
+  display: none;
+  color: rgb(196, 255, 255);
+  font-size: 16px;
+  margin-top: 70px;
+  line-height: 25px;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+/* Clock settings */
+#clock-box {
+  position: absolute;
+  left: 60px;
+  top: 550px;
+  font-size: 28px;
+  display: none;
+}
+
+#clock-box a {
+  font-size: 28px;
+  text-decoration: none;
+}
+
+#clock {
+  margin-left: 48px;
+}
+
+#clock .digit {
+  font-size: 64px;
+}
+
+/* Canvas settings */
+#canvas {
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+}
+
+/* Error section */
+#error {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.say {
+  margin-left: 5px;
+}
+
+.space {
+  margin-right: 150px;
+}
+
+/* Message box */
+#message-box{
+  position: absolute;
+  margin-top: 450px;
+  font-size: 25px;
+  font-family: monospace;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 768px) {
+  /* Adjust wrap width for smaller screens */
+  #wrap {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust text box size and position */
+  #text {
+    width: 80%;
+    height: auto;
+    left: 10%;
+    top: 20px;
+  }
+
+  /* Adjust font sizes for readability on mobile */
+  body {
+    font-size: 12px;
+  }
+
+  #code {
+    font-size: 14px;
+  }
+
+  #clock-box {
+    left: 20px;
+    top: 480px;
+    font-size: 24px;
+  }
+
+  #clock .digit {
+    font-size: 48px;
+  }
+
+  /* Adjust canvas size */
+  #canvas {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust message box position */
+  #message-box {
+    margin-top: 350px;
+    font-size: 20px;
+  }
+
+  /* Adjust space for mobile */
+  .space {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Further adjust for smaller phones */
+  body {
+    font-size: 10px;
+  }
+
+  #wrap {
+    width: 100%;
+    height: auto;
+  }
+
+  #text {
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 20px;
+  }
+
+  #message-box {
+    margin-top: 300px;
+    font-size: 18px;
+  }
+
+  #clock-box
